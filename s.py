@@ -121,7 +121,7 @@ def main(argv):
 
   print(colored(f"        \t[...Bruteforcing...]", 'cyan'))
 
-  with open(wordlist, encoding="ISO-8859-1") as f:
+  with open(wordlist, encoding="utf-8") as f:
     for line in f:
       passwords.append(line.rstrip()) 
       if count == 999:
