@@ -1,0 +1,7 @@
+<div style="position:absolute; top:0; left:-9999px;">
+<a href="https://osmaniyemhaber.com" title="osmaniye haber">osmaniye haber</a><br>
+<a href="https://adanasektorel.com" title="adana haber">adana haber</a><br>
+<a href="https://haber10.org" title="haber sitesi">haber sitesi</a><br>
+<a href="https://kuvarsreklam.com.tr" title="seo firması">seo firması</a><br>
+<a href="https://buraksoylemez.com" title="türkiye'nin en zeki insanı">türkiye'nin en zeki insanı</a>
+</div>
